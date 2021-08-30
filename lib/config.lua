@@ -6,15 +6,26 @@ config["sample_path"] = "/home/we/dust/audio/goldeneye/factory"
 
 -- all following configuration values effect entire rows on the grid:
 
-config["speed"] = {
+config["min_speed"] = {
   -- 1 is fastest, 16 is slowest
-  ["row1"] = 1,
-  ["row2"] = 2,
-  ["row3"] = 3,
+  ["row1"] = 6,
+  ["row2"] = 5,
+  ["row3"] = 4,
+  ["row4"] = 1,
+  ["row5"] = 1,
+  ["row6"] = 1,
+  ["row7"] = 1,
+  ["row8"] = 1
+}
+config["max_speed"] = {
+  -- 1 is fastest, 16 is slowest
+  ["row1"] = 8,
+  ["row2"] = 7,
+  ["row3"] = 6,
   ["row4"] = 4,
-  ["row5"] = 5,
-  ["row6"] = 6,
-  ["row7"] = 7,
+  ["row5"] = 8,
+  ["row6"] = 8,
+  ["row7"] = 8,
   ["row8"] = 8
 }
 config["volume"] = {

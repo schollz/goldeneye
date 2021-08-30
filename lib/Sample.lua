@@ -54,7 +54,7 @@ end
 
 function Sample:irradiate()
   local row = "row" .. self:get_y()
-  self:set_speed(config.speed[row])
+  self:set_speed(math.random(config.min_speed[row],config.max_density[row]))
   self:set_density(math.random(config.min_density[row], config.max_density[row]))
   self:set_length(math.random(config.min_length[row], config.max_length[row]))
   self:set_offset(math.random(config.min_offset[row], config.max_offset[row]))
